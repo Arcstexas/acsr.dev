@@ -1,0 +1,11 @@
+<a href="{{ action('HomeController@showHome') }}">Home</a>
+<a href="{{ action('HomeController@showAboutUs') }}">About Us</a>
+<a href="{{ action('HomeController@showOurJourney') }}">Our Journey</a>
+<a href="{{ action('HomeController@showContactUs') }}">Contact Us</a>
+<a href="{{ action('HomeController@showPictureGallery') }}">Picture Gallaery</a>
+<a href="{{ action('HomeController@showObjectives') }}">Aims & Objectives</a>
+<a href="{{ action('HomeController@showMembershipPolicy') }}">Membership Policy</a>
+<a href="{{ action('HomeController@showPrivacyPolicy') }}">Privact Policy</a>
+<a href="{{ action('HomeController@showBoardOfDirectors') }}">Board of Directors</a>
+<a href="{{ action('HomeController@showManagement') }}">Management</a>
+<a href="{{ action('HomeController@showByLaws') }}">By Laws</a>

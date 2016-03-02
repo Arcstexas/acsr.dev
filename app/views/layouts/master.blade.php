@@ -28,18 +28,13 @@
 
 		<main id="main" class="container">
 
-<!-- 			@if (Session::has('successMessage'))
-			    <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
-			@endif
-			@if (Session::has('errorMessage'))
-			    <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
-			@endif -->
+			@include('/partials/navBar')
 
 
 			@yield('content')  {{-- is a placeholder --}}
 
 
-
+			@include('/partials/footer');
 		</main>
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 		<!-- // <script src="/js/bootstrap.min.js"></script> -->
