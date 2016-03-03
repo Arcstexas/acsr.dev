@@ -3,5 +3,5 @@
 @section('content')
 
 <br>
-	<h1>vendor benifit and rebate</h1>
+	<h1>Board Of Directors</h1>
 @stop
