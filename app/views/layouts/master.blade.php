@@ -1,39 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>Association of Convenience Store Retailers</title>
 
-		<title>Shawn Pivonka Gaming Blog</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+    <!-- normalizar -->
+    <link href="css/normalize.css" rel="stylesheet">
 
-
-
-
-
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">		
-		<link rel="shortcut icon" href="/img/truck.jpg" />
-		<!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
-		<!-- <link rel="stylesheet" type="text/css" href="/css/mainBlog.css"> -->
-		<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
 
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--fontawesome-->
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--animation-->
+    <link href="/css/animate.min.css" rel="stylesheet">
+
+    <!--main css-->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!--main css-->
+    <link href="/css/responsive.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 		@yield('top-script')
 	</head>
 	<body>
+    <div id="preloader">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw margin-bottom"></i>
+    </div>
+    
+    <header id="header_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="logo">
+                        <h2><a href="">ACSR</a></h2>
+                        <h3>Association of Convenience Store Retailers</h3>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="mainmenu">
+                        <div class="navbar navbar-nobg">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
 
-		<main id="main" class="container">
-
-<!-- 			@if (Session::has('successMessage'))
-			    <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
-			@endif
-			@if (Session::has('errorMessage'))
-			    <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
-			@endif -->
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Home</a>
+                                    </li>
+                                    <li><a href="#">About</a>
+                                    </li>
+                                    <li><a href="#">blog</a>
+                                    </li>
+                                    <li><a href="#">Portfolio</a>
+                                    </li>
+                                    <li><a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header_area_text">
+                        <h2 class="wow slideInDown" data-wow-duration="2s">In Numbers is Strength<br>In Unity is Power</h2>
+                        <p class="wow slideInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis orci dapibus risus dignissim, viverra pellentesque arcu ullamcorper. Mauris a tincidunt lectus. Proin nec venenatis quam. </p>
+                        <a class="wow slideInUp" data-wow-duration="2s" href="">START  TODAY  with  us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header top area -->
 
 
 			@yield('content')  {{-- is a placeholder --}}
@@ -41,10 +104,61 @@
 
 
 		</main>
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-		<!-- // <script src="/js/bootstrap.min.js"></script> -->
-		<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		@yield('bottom-script')
+    <!-- main jQuery-->
+    <script src="/js/jquery-1.11.3.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- wow js -->
+    <script src="/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- main js -->
+    <script src="/js/main.js"></script>
+	@yield('bottom-script')
+	<footer id="footer_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="company_logo wow slideInDown">
+                        <h2>companyname</h2>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="company_address wow slideInDown">
+                        <h2>New York</h2>
+                        <p>Address goes here in a one or two lines, maybe lorem ipsum
+                        </p>
+                        <h3>
+                            +44 800 800 90
+                            info@domen.com </h3>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="company_address wow slideInDown">
+                        <h2>london</h2>
+                        <p>Address goes here in a one or two lines, maybe lorem ipsum
+                        </p>
+                        <h3>
+                            +44 800 800 90
+                            info@domen.com </h3>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="company_address wow slideInDown">
+                        <h2>madrid</h2>
+                        <p>Address goes here in a one or two lines, maybe lorem ipsum
+                        </p>
+                        <h3>
+                            +44 800 800 90
+                            info@domen.com </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 	</body>
 </html>
