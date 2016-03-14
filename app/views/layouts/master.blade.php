@@ -1,50 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Association of Convenience Store Retailers</title>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Association of Convenience Store Retailers</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-    <!-- normalizar -->
-    <link href="css/normalize.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-
-
-    <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-    <!--fontawesome-->
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
-
-    <!--animation-->
-    <link href="/css/animate.min.css" rel="stylesheet">
-
-    <!--main css-->
-    <link href="/css/style.css" rel="stylesheet">
-
-    <!--main css-->
-    <link href="/css/responsive.css" rel="stylesheet">
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <!-- CUSTOM STYLE -->  
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/responsee.js"></script>   
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
 		@yield('top-script')
 	</head>
 	<body>
 
 
-		<main id="main" class="container">
+		<main id="main" class="container-fluid">
 
 			@include('/partials/navBar')
 
@@ -55,61 +43,27 @@
 
 			@include('/partials/footer');
 		</main>
-    <!-- main jQuery-->
-    <script src="/js/jquery-1.11.3.min.js"></script>
-
-    <!-- bootstrap js -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- wow js -->
-    <script src="/js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-
-    <!-- main js -->
-    <script src="/js/main.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {  
+           $("#owl-demo").owlCarousel({
+            slideSpeed : 400,
+            autoPlay : true,
+            navigation : false,
+            pagination : false,
+            singleItem:true
+           });
+           $("#owl-demo2").owlCarousel({
+            slideSpeed : 400,
+            autoPlay : true,
+            navigation : false,
+            pagination : true,
+            singleItem:true
+           });
+         });    
+          
+      </script> 
 	@yield('bottom-script')
-	<footer id="footer_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="company_logo wow slideInDown">
-                        <h2>companyname</h2>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="company_address wow slideInDown">
-                        <h2>New York</h2>
-                        <p>Address goes here in a one or two lines, maybe lorem ipsum
-                        </p>
-                        <h3>
-                            +44 800 800 90
-                            info@domen.com </h3>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="company_address wow slideInDown">
-                        <h2>london</h2>
-                        <p>Address goes here in a one or two lines, maybe lorem ipsum
-                        </p>
-                        <h3>
-                            +44 800 800 90
-                            info@domen.com </h3>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="company_address wow slideInDown">
-                        <h2>madrid</h2>
-                        <p>Address goes here in a one or two lines, maybe lorem ipsum
-                        </p>
-                        <h3>
-                            +44 800 800 90
-                            info@domen.com </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
 	</body>
 </html>
