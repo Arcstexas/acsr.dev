@@ -17,7 +17,7 @@
                     <div class="company_address wow slideInDown">
 					<a href="{{ action('HomeController@showByLaws') }}">By Laws</a><br>
 					<a href="{{ action('HomeController@showMembershipPolicy') }}">Membership Policy</a><br>
-                    <a href="{{ action('HomeController@showPrivacyPolicy') }}">Privact Policy</a><br>
+                    <a href="{{ action('HomeController@showPrivacyPolicy') }}">Privacy Policy</a><br>
                     </div>
                 </div>
                 <div class="col-sm-3">

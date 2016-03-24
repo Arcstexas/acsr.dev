@@ -73,10 +73,10 @@ ANNOUNCEMENTS
                      <ul class="right top-ul chevron">
                         <li><a href="{{{ action('HomeController@showHome') }}}">HOME</a>
                         </li>
-                        <li><a href="product.html">MEMBERSHIP</a>
+                        <li><a href="#">MEMBERSHIP</a>
                             <ul>
-                                <li>Convenience Store<br>Membership Application</li>
-                                <li>Non-Convenience Store<br>Membership Application</li>
+                                <li><a>Convenience Store<br>Membership Application</a></li>
+                                <li><a>Non-Convenience Store<br>Membership Application</a></li>
                             </ul>
                         </li>
                         <li><a href="services.html">Services</a>
