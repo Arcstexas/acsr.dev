@@ -77,6 +77,8 @@ ANNOUNCEMENTS
                             <ul>
                                 <li><a>Convenience Store<br>Membership Application</a></li>
                                 <li><a>Non-Convenience Store<br>Membership Application</a></li>
+                                <a href="{{{ action('MembershipController@showConvenienceStoreMembershipApplication') }}}" target="_blank"><li>Convenience Store<br>Membership Application</li></a>
+                                <a href="{{{ action('MembershipController@showNonConvenienceStoreMembershipApplication') }}}" target="_blank"><li>Non-Convenience Store<br>Membership Application</li></a>
                             </ul>
                         </li>
                         <li><a href="services.html">Services</a>

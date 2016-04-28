@@ -36,8 +36,8 @@ Route::get('/', 'HomeController@showHome');
 /*
  *		Membership Routes
  */
-Route::get('/membership/convenienceStore', 'MembershipController@showConvenienceStoreMembershipApplication');
-Route::get('/membership/nonConvenienceStore', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/membership/nonConvenienceStore.pdf', 'MembershipController@showConvenienceStoreMembershipApplication');
+Route::get('/membership/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
 
 /*
  *		Vendor Routes
