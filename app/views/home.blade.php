@@ -106,27 +106,35 @@
                <h2>Board of Directors</h2>
                <p class="subtitile">We are always expanding our capabilities and doing more for our members.
                </p>
-               <div class="margin">
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/first-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
+               <div class="container">
+                  <div class="col-md-4 img-responsive img-rounded">
+                    <img src="img/tahir.jpg" alt="alternative text">      
+                    <p class="subtitile">President
+                    </p>
                   </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/second-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
+                  <div class="col-md-4 img-responsive img-rounded">
+                    <img src="img/inderjit.jpg" alt="alternative text">      
+                    <p class="subtitile">Vice President
+                    </p>
                   </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/third-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
+                  <div class="col-md-4 img-responsive img-rounded">
+                    <img src="img/rana.jpg" alt="alternative text">      
+                    <p class="subtitile">Director
+                    </p>
                   </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/fourth-small.jpg" alt="alternative text">      
-                     <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                     </p>
+                  <br>
+                 <div class="bottom">
+                  <div class="col-md-4 img-rounded">
+                    <img src="img/butt.jpg" alt="alternative text">      
+                    <p class="subtitile">Director
+                    </p>
                   </div>
+                  <div class="col-md-4 img-responsive img-rounded">
+                    <img src="img/rafati.jpg" alt="alternative text">      
+                    <p class="subtitile">Director
+                    </p>
+                  </div>
+              	</div>
                </div>
             </div>
          </div>
