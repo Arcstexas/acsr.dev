@@ -34,10 +34,31 @@ Route::get('/projects', 'HomeController@showProjects');
 Route::get('/', 'HomeController@showHome');
 
 /*
- *		Membership Routes
+ *		PDF Routes
  */
-Route::get('/membership/nonConvenienceStore.pdf', 'MembershipController@showConvenienceStoreMembershipApplication');
-Route::get('/membership/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/pdf/nonConvenienceStore.pdf', 'MembershipController@showConvenienceStoreMembershipApplication');
+Route::get('/pdf/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/pdf/Coca-Cola-May2016-Promotion.pdf', 'MembershipController@showCocaColaPdf');
+
+/* 
+
+<a href="{{{ action('MembershipController@showConvenienceStoreMembershipApplication') }}}" target="_blank"><img src="/img/coke.jpg"></a>
+create the in function being refrenced in the MebershipController.php file
+create the blade file with format   somefilename.blade.php in the views/membership filder
+in this file, routes.php create the route to parse, has to matche the location for public folder
+*/
+
+
+
+Route::get('/pdf/.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/pdf/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/pdf/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/pdf/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/pdf/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/pdf/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/pdf/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/pdf/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
+Route::get('/pdf/nonConvenienceStore.pdf', 'MembershipController@showNonConvenienceStoreMembershipApplication');
 
 /*
  *		Vendor Routes

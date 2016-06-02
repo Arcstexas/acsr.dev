@@ -10,19 +10,19 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery-ui.min.js"></script>-->    
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsee.css">
-    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/responsee.css">
+    <link rel="stylesheet" href="/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/owl-carousel/owl.theme.css">
     <!-- CUSTOM STYLE -->  
-    <link rel="stylesheet" href="css/template-style.css">
+    <link rel="stylesheet" href="/css/template-style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
-    <script type="text/javascript" src="js/modernizr.js"></script>
-    <script type="text/javascript" src="js/responsee.js"></script>   
+    <script type="text/javascript" src="/js/modernizr.js"></script>
+    <script type="text/javascript" src="/js/responsee.js"></script>   
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -43,7 +43,7 @@
 
 			@include('/partials/footer');
 		</main>
-      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
+      <script type="text/javascript" src="/owl-carousel/owl.carousel.js"></script>   
       <script type="text/javascript">
          jQuery(document).ready(function($) {  
            $("#owl-demo").owlCarousel({

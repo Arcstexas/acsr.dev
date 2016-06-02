@@ -107,34 +107,43 @@
                <p class="subtitile">We are always expanding our capabilities and doing more for our members.
                </p>
                <div class="container">
-                  <div class="col-md-4 img-responsive img-rounded">
-                    <img src="img/tahir.jpg" alt="alternative text">      
-                    <p class="subtitile">President
-                    </p>
-                  </div>
-                  <div class="col-md-4 img-responsive img-rounded">
-                    <img src="img/inderjit.jpg" alt="alternative text">      
-                    <p class="subtitile">Vice President
-                    </p>
-                  </div>
-                  <div class="col-md-4 img-responsive img-rounded">
-                    <img src="img/rana.jpg" alt="alternative text">      
-                    <p class="subtitile">Director
-                    </p>
-                  </div>
-                  <br>
-                 <div class="bottom">
-                  <div class="col-md-4 img-rounded">
-                    <img src="img/butt.jpg" alt="alternative text">      
-                    <p class="subtitile">Director
-                    </p>
-                  </div>
-                  <div class="col-md-4 img-responsive img-rounded">
-                    <img src="img/rafati.jpg" alt="alternative text">      
-                    <p class="subtitile">Director
-                    </p>
-                  </div>
-              	</div>
+
+	                <div class="img-responsive">
+		              <div class="img-height img-rounded">
+	                    <img src="img/tahir.jpg" alt="alternative text">      
+	                  </div>
+	                  <p class="subtitile">President</p>
+               		</div>
+
+               		<div class="img-responsive">
+		              <div class="img-height img-rounded">
+	                    <img src="img/inderjit.jpg" alt="alternative text">      
+	                  </div>
+	                  <p class="subtitile">Vice President</p>
+               		</div>
+
+               		<div class="img-responsive">
+		              <div class="img-height img-rounded">
+	                    <img src="img/rana.jpg" alt="alternative text">      
+	                  </div>
+	                  <p class="subtitile">Director</p>
+               		</div>
+	            <br>
+
+               		<div class="img-responsive">
+		              <div class="img-height img-rounded">
+	                    <img src="img/butt.jpg" alt="alternative text">      
+	                  </div>
+	                  <p class="subtitile">Director</p>
+               		</div>
+
+               		<div class="img-responsive">
+		              <div class="img-height img-rounded">
+	                    <img src="img/rafati.jpg" alt="alternative text">      
+	                  </div>
+	                  <p class="subtitile">Director</p>
+               		</div>
+
                </div>
             </div>
          </div>

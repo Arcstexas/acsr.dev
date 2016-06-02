@@ -75,13 +75,16 @@ ANNOUNCEMENTS
                         </li>
                         <li><a href="#">MEMBERSHIP</a>
                             <ul>
-                                <li><a>Convenience Store<br>Membership Application</a></li>
-                                <li><a>Non-Convenience Store<br>Membership Application</a></li>
-                                <a href="{{{ action('MembershipController@showConvenienceStoreMembershipApplication') }}}" target="_blank"><li>Convenience Store<br>Membership Application</li></a>
-                                <a href="{{{ action('MembershipController@showNonConvenienceStoreMembershipApplication') }}}" target="_blank"><li>Non-Convenience Store<br>Membership Application</li></a>
+                                <a href="{{{ action('MembershipController@showConvenienceStoreMembershipApplication') }}}" target="_blank">
+                                    <li>Convenience Store<br>Membership Application</li>
+                                </a>
+
+                                <a href="{{{ action('MembershipController@showNonConvenienceStoreMembershipApplication') }}}" target="_blank">
+                                    <li>Non-Convenience Store<br>Membership Application</li>
+                                </a>
                             </ul>
                         </li>
-                        <li><a href="services.html">Services</a>
+                        {{-- <li><a href="services.html">Services</a> --}}
                         </li>
                      </ul>
                   </div>
@@ -92,12 +95,12 @@ ANNOUNCEMENTS
                   </ul>
                   <div class="top-nav s-12 l-5">
                      <ul class="top-ul chevron">
-                        <li><a href="gallery.html">Gallery</a>
+                        {{-- <li><a href="gallery.html">Gallery</a> --}}
                         </li>
                         <li>
                            <a>Vendor Info</a>               
                            <ul>
-                              <li><a>Vendor Promotion</a>
+                              <li><a href="{{{ action('VendorController@showPromotions') }}}" target="_blank">Vendor Promotion</a>
                               </li>
                               <li><a>Preferred Vendor</a>
                               </li>

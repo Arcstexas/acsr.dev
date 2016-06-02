@@ -285,7 +285,47 @@ form.customform input, form.customform select, form.customform textarea {
     padding-top: 200px;
     padding-bottom: 100px;
 }
+#third-block{
+	/*height: 95vw;*/
+	padding-bottom: 0;
+}
 .container {
-	height: 500px;
-	width: 300px;
+	width: 100%;
+}
+.img-responsive{
+	margin: 0 2% 30px;
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+}
+.img-height{
+	height: 25vw;
+	overflow: hidden;
+}
+.chevron{
+	margin-bottom: 0;
+	height:50px;
+}
+.chevron li a, .chevron li{
+	height: 100%;
+	font-size: 20px;
+	line-height: 0;
+}
+#main > header > nav > div > div > ul{
+	overflow: hidden;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+#main > header > nav > div > div > ul > li > a{
+	padding:0;
+}
+.logo a img{
+	height: 130px;
+	transform: translateX(-50%);
+	position: relative;
+	left: 50%;
+}
+#main > header > nav > div > div > div.logo.hide-l{
+	display: none;
 }

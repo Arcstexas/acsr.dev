@@ -11,4 +11,8 @@ class MembershipController extends \BaseController {
 	{
 		return View::make('/membership/nonConvenienceStoreMembershipApplication');
 	}
+	public function showCocaColaPdf()
+	{
+		return View::make('/membership/cocacola');
+	}
 }
