@@ -17,4 +17,8 @@ class VendorController extends \BaseController {
 		return View::make('/vendor/promotions');
 	}
 
+	public function showPreferredVendor()
+	{
+		return View::make('/vendor/prefferedVendors');
+	}
 }

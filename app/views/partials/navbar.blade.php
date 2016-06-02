@@ -102,7 +102,7 @@ ANNOUNCEMENTS
                            <ul>
                               <li><a href="{{{ action('VendorController@showPromotions') }}}" target="_blank">Vendor Promotion</a>
                               </li>
-                              <li><a>Preferred Vendor</a>
+                              <li><a href="{{{ action('VendorController@showPreferredVendors') }}}" target="_blank">Preferred Vendor</a>
                               </li>
                               <li><a>Vendors Rebate & <br>Benefit Program</a>                 
                               </li>
