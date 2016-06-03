@@ -15,4 +15,46 @@ class MembershipController extends \BaseController {
 	{
 		return View::make('/membership/cocacola');
 	}
+
+
+
+
+
+
+
+
+
+	public function showBigRedPdf()
+	{
+		return View::make('/membership/bigred');
+	}
+	public function showCocaColaPdf()
+	{
+		return View::make('/membership/cocacola');
+	}
+	public function showCocaColaPdf()
+	{
+		return View::make('/membership/cocacola');
+	}
+	public function showCocaColaPdf()
+	{
+		return View::make('/membership/cocacola');
+	}
+	public function showCocaColaPdf()
+	{
+		return View::make('/membership/cocacola');
+	}
+	public function showCocaColaPdf()
+	{
+		return View::make('/membership/cocacola');
+	}
+	public function showCocaColaPdf()
+	{
+		return View::make('/membership/cocacola');
+	}
+	public function showCocaColaPdf()
+	{
+		return View::make('/membership/cocacola');
+	}
+
 }
