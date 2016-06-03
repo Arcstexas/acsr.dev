@@ -16,7 +16,7 @@
 	<div class="container text-center">
 		<table class="table table-striped">
 			<tr class="success">
-				<td colspan="4">7- GAMES, INC. - LOW RIDER SUN GLASSES</td>
+				<td colspan="4">7- GAMES, INC. - LOW RIDER SUN GLASSES </td>
 			</tr>
 			<tr class="info">
 				<td colspan="4">STEVEN GAMEZ <br>OWNER</td>
