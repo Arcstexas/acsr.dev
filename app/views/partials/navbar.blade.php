@@ -59,7 +59,12 @@ IMPORTANT
 ANNOUNCEMENTS	 
 </a>	
  --}}
-
+<style>
+   .chevron li a, .chevron li {
+      line-height: 1 !important;
+      font-size: 16px !important;
+   }
+</style>
       <!-- TOP NAV WITH LOGO -->  
       <header>
          <nav>
@@ -73,15 +78,19 @@ ANNOUNCEMENTS
                      <ul class="right top-ul chevron">
                         <li><a href="{{{ action('HomeController@showHome') }}}">HOME</a>
                         </li>
-                        <li><a href="#">MEMBERSHIP</a>
+                        <li>
+                           <a href="#">MEMBERSHIP</a>
                             <ul>
+                               <li>
                                 <a href="{{{ action('MembershipController@showConvenienceStoreMembershipApplication') }}}" target="_blank">
-                                    <li>Convenience Store<br>Membership Application</li>
+                                    Convenience Store Membership Application
                                 </a>
-
+                               </li>
+                               <li>
                                 <a href="{{{ action('MembershipController@showNonConvenienceStoreMembershipApplication') }}}" target="_blank">
-                                    <li>Non-Convenience Store<br>Membership Application</li>
+                                    Non-Convenience Store Membership Application
                                 </a>
+                               </li>
                             </ul>
                         </li>
                         {{-- <li><a href="services.html">Services</a> --}}
@@ -100,15 +109,18 @@ ANNOUNCEMENTS
                         <li>
                            <a>Vendor Info</a>               
                            <ul>
-                              <li><a href="{{{ action('VendorController@showPromotions') }}}" target="_blank">Vendor Promotion</a>
+                              <li>
+                                 <a href="{{{ action('VendorController@showPromotions') }}}" target="_blank">Vendor Promotion</a>
                               </li>
-                              <li><a href="{{{ action('VendorController@showPreferredVendors') }}}" target="_blank">Preferred Vendor</a>
+                              <li>
+                                 <a href="{{{ action('VendorController@showPreferredVendors') }}}" target="_blank">Preferred Vendor</a>
                               </li>
-                              <li><a>Vendors Rebate & <br>Benefit Program</a>                 
+                              <li>
+                                 <a>Vendors Rebate & Benefit Program</a>
                               </li>
                            </ul>
                         </li>
-                        <li><a href="contact.html">Contact</a>
+                        <li><a href="{{{action('HomeController@contact')}}}">Contact</a>
                         </li>
                      </ul> 
                   </div>

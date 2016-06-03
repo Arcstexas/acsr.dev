@@ -32,6 +32,7 @@ Route::get('/bulletinBoard', 'HomeController@showBulletinBoard');
 Route::get('/resourcesAndLearning', 'HomeController@showResourcesAndLearning');
 Route::get('/projects', 'HomeController@showProjects');
 Route::get('/', 'HomeController@showHome');
+Route::get('contact', 'HomeController@contact');
 
 /*
  *		PDF Routes

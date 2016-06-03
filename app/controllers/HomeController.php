@@ -107,4 +107,8 @@ class HomeController extends BaseController {
 		return View::make('importantannouncements');
 	}
 
+	public function contact()
+	{
+		return View::make('contact');
+	}
 }
