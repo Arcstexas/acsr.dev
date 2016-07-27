@@ -31,8 +31,11 @@ Route::get('/usefulLinks', 'HomeController@showUsefulLinks');
 Route::get('/bulletinBoard', 'HomeController@showBulletinBoard');
 Route::get('/resourcesAndLearning', 'HomeController@showResourcesAndLearning');
 Route::get('/projects', 'HomeController@showProjects');
-Route::get('/', 'HomeController@showHome');
+Route::get('/', ['as' => 'home', 'uses' => 'HomeController@showHome']);
 Route::get('contact', 'HomeController@contact');
+Route::post('login', ['as' => 'post:login', 'uses' => 'LoginController@postLogin']);
+Route::post('change-password', ['as' => 'post:change:password', 'uses' => 'LoginController@postChangePassword']);
+Route::get('logout', ['as' => 'logout', 'uses' => 'LoginController@logout']);
 
 /*
  *		PDF Routes

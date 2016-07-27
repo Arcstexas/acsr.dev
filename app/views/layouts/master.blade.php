@@ -40,12 +40,93 @@
 
 			@yield('content')  {{-- is a placeholder --}}
 
-
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h3 class="modal-title" id="myModalLabel"><center><b>Login</b></center></h3>
+                        </div>
+                        <div class="modal-body">
+                            <form action="{{route('post:login')}}" method="post">
+                                @if(Session::has('fail'))
+                                    <p class="alert alert-danger">{{Session::get('fail')}}</p>
+                                @endif
+                                @if ($errors->has())
+                                    <div class="alert alert-danger">
+                                        @foreach ($errors->all() as $error)
+                                            {{ $error }}<br>
+                                        @endforeach
+                                    </div>
+                                @endif
+                                <div class="form-group">
+                                    <label for="">Username</label>
+                                    <input type="text" name="username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Password</label>
+                                    <input type="password" name="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-block btn-default">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="changePassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h3 class="modal-title" id="myModalLabel"><center><b>Change your Password</b></center></h3>
+                        </div>
+                        <div class="modal-body">
+                            <form action="{{route('post:change:password')}}" method="post">
+                                @if(Session::has('fail'))
+                                    <p class="alert alert-danger">{{Session::get('fail')}}</p>
+                                @endif
+                                @if ($errors->has())
+                                    <div class="alert alert-danger">
+                                        @foreach ($errors->all() as $error)
+                                            {{ $error }}<br>
+                                        @endforeach
+                                    </div>
+                                @endif
+                                <div class="form-group">
+                                    <label for="">Password</label>
+                                    <input type="password" name="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Confirm Password</label>
+                                    <input type="password" name="cpassword" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-block btn-default">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
 			@include('/partials/footer');
 		</main>
       <script type="text/javascript" src="/owl-carousel/owl.carousel.js"></script>   
       <script type="text/javascript">
-         jQuery(document).ready(function($) {  
+         jQuery(document).ready(function($) {
+         @if(Session::has('fail'))
+            $('#myModal').modal('show');
+         @endif
+         @if (count($errors) > 0)
+            @if(Session::has('password'))
+                $('#changePassword').modal('show');
+            @else
+                $('#myModal').modal('show');
+            @endif
+         @endif
            $("#owl-demo").owlCarousel({
             slideSpeed : 400,
             autoPlay : true,

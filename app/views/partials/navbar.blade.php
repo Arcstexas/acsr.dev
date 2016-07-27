@@ -76,6 +76,11 @@ ANNOUNCEMENTS
                   <p class="nav-text">Custom menu text</p>
                   <div class="top-nav s-12 l-5">
                      <ul class="right top-ul chevron">
+                        @if(Auth::check())
+                        <li>
+                           <a href="javascript:void(0)" data-toggle="modal" data-target="#changePassword">Change Password</a>
+                        </li>
+                        @endif
                         <li><a href="{{{ action('HomeController@showHome') }}}">HOME</a>
                         </li>
                         <li>
@@ -106,6 +111,7 @@ ANNOUNCEMENTS
                      <ul class="top-ul chevron">
                         {{-- <li><a href="gallery.html">Gallery</a> --}}
                         </li>
+                        @if ( Auth::check())
                         <li>
                            <a>Vendor Info</a>               
                            <ul>
@@ -120,8 +126,19 @@ ANNOUNCEMENTS
                               </li>
                            </ul>
                         </li>
-                        <li><a href="{{{action('HomeController@contact')}}}">Contact</a>
+                        @endif
+                        <li>
+                           <a href="{{{action('HomeController@contact')}}}">Contact</a>
                         </li>
+                        @if(Auth::check())
+                           <li>
+                              <a href="{{route('logout')}}">Logout</a>
+                           </li>
+                        @else
+                           <li>
+                              <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal">Login</a>
+                           </li>
+                        @endif
                      </ul> 
                   </div>
                </div>
